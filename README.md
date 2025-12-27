@@ -112,6 +112,11 @@ DAO pattern
 MySQL Workbench
 
 📁 Project Structure
+
+
 <img width="427" height="874" alt="image" src="https://github.com/user-attachments/assets/65768c9a-2e8c-4f17-84f4-e5e675c88edc" />
+
+Data is being stored in MySQL
+
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/772440cf-92bb-451a-b394-8ede252b6d02" />
