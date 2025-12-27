@@ -5,12 +5,11 @@ About the Project
 This project is a desktop-based Chess game developed using Core Java and Swing.
 It allows two players to play a complete chess match with most real chess rules implemented.
 
-The main goal of the project was to understand how object-oriented design, game logic, GUI handling, and state management come together in a real application rather than solving isolated coding problems.
+The main goal of the project was to understand how object-oriented design, game logic, GUI handling, and state management work together in a real application, rather than solving isolated coding problems.
 
-What the Game Supports
 Basic Gameplay
 
-Two-player chess (White vs Black)
+Two-player chess game (White vs Black)
 
 Standard 8×8 chessboard
 
@@ -34,15 +33,15 @@ King capture is prevented (game ends instead)
 
 Game Ending
 
-Game ends when:
+The game ends when:
 
-A king is threatened with no continuation (checkmate handling)
+A king is threatened with no valid continuation (checkmate handling)
 
 All opponent pieces are eliminated
 
 Time runs out
 
-Once the game ends, the board is disabled
+Once the game ends, the board is disabled and no further moves are allowed.
 
 User Interface
 
@@ -64,7 +63,7 @@ Move history is stored using MySQL
 
 JDBC is used for database connectivity
 
-DAO pattern is followed for clean separation
+DAO pattern is followed for clean separation of logic
 
 Technologies Used
 
@@ -76,11 +75,6 @@ OOP concepts (Inheritance, Polymorphism, Abstraction)
 
 JDBC
 
-MySQL
-
-Basic data structures (Stacks, Arrays)
-
-Project Structure
 src/
 ├── main/
 │   └── ChessGame.java
@@ -114,3 +108,8 @@ src/
 │
 └── icons/
     └── (chess piece images)
+
+
+MySQL
+
+Basic data structures (Stacks, Arrays)
