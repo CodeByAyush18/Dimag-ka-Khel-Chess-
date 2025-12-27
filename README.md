@@ -1,86 +1,123 @@
 # Dimag-ka-Khel-Chess-
 <img width="889" height="963" alt="image" src="https://github.com/user-attachments/assets/26885a85-688b-4403-9b6c-c6ea46851566" />
-About the Project
+📌 Project Overview
 
-This project is a desktop-based Chess game developed using Core Java and Swing.
-It allows two players to play a complete chess match with most real chess rules implemented.
+This project is a fully functional Chess Game developed using Core Java, Object-Oriented Programming (OOP), Data Structures, and Swing GUI.
+It simulates a real chess match between two players with essential and advanced chess rules implemented.
 
-The main goal of the project was to understand how object-oriented design, game logic, GUI handling, and state management work together in a real application, rather than solving isolated coding problems.
+The application focuses on clean architecture, real-world Java practices, and interactive gameplay, making it suitable for academic projects, interviews, and portfolio showcases.
 
-Basic Gameplay
+🚀 Key Features
+♟️ Core Gameplay
 
 Two-player chess game (White vs Black)
 
-Standard 8×8 chessboard
+Fully interactive 8×8 chessboard
 
-Turn-based moves
+Turn-based play with rule enforcement
 
-Illegal moves are not allowed
+Real chess movement rules for all pieces
 
-Chess Rules Implemented
+🎨 GUI & UX
 
-Correct movement rules for all pieces
+Java Swing based GUI
 
-Capturing opponent pieces
+Chess piece icons instead of text
 
-Pawn promotion (Queen, Rook, Bishop, Knight)
+Valid move highlighting (Green)
+
+Capture indication (Red square)
+
+Undo & Redo functionality
+
+Clean and responsive UI
+
+⏱️ Game Controls
+
+Separate timers for White and Black
+
+Automatic timer switching per turn
+
+Game automatically ends when time expires
+
+♜ Advanced Chess Rules
+
+Pawn Promotion (Queen, Rook, Bishop, Knight)
 
 Castling (King-side and Queen-side)
 
 Check detection
 
-King capture is prevented (game ends instead)
+Checkmate handling
 
-Game Ending
+King capture prevention (as per real chess rules)
 
-The game ends when:
+🏁 Game End Logic
 
-A king is threatened with no valid continuation (checkmate handling)
+Game ends with a victory message when:
+
+Checkmate occurs
 
 All opponent pieces are eliminated
 
-Time runs out
+Board disables automatically after game over
 
-Once the game ends, the board is disabled and no further moves are allowed.
+🔁 Move Management
 
-User Interface
+Undo last move
 
-Built using Java Swing
+Redo undone move
 
-Chess piece icons instead of text
+Internal move stack using data structures
 
-Valid moves are highlighted
+💾 Database Integration (MySQL)
 
-Captured squares are highlighted in red
+Move history stored using JDBC
 
-Undo and Redo functionality
+MySQL used for persistent storage
 
-Separate timers for both players
+Clean DAO design pattern
 
-Data Storage
+🧠 Concepts Used
+💡 Java & OOP
 
-Move history is stored using MySQL
+Abstraction (Piece hierarchy)
 
-JDBC is used for database connectivity
+Inheritance (Pawn, Rook, Knight, etc.)
 
-DAO pattern is followed for clean separation of logic
+Polymorphism (isValidMove() overrides)
 
-Technologies Used
+Encapsulation (Board & Piece state handling)
 
-Java (Core Java)
+🧮 Data Structures
 
-Java Swing (GUI)
+Stack for Undo/Redo operations
 
-OOP concepts (Inheritance, Polymorphism, Abstraction)
+2D Array for board representation
+
+🖥️ GUI
+
+Java Swing (JFrame, JButton, JPanel)
+
+Event-driven programming
+
+Custom UI updates
+
+🔌 Database
 
 JDBC
 
+DAO pattern
+
+MySQL Workbench
+
+📁 Project Structure
 src/
 ├── main/
-│   └── ChessGame.java
+│   └── ChessGame.java        (Application entry point)
 │
 ├── gui/
-│   └── ChessGUI.java
+│   └── ChessGUI.java         (GUI & game controller)
 │
 ├── board/
 │   ├── Board.java
@@ -107,9 +144,6 @@ src/
 │   └── GameDAO.java
 │
 └── icons/
-    └── (chess piece images)
-
-
-MySQL
-
-Basic data structures (Stacks, Arrays)
+    ├── WPawn.png
+    ├── BPawn.png
+    └── (all chess piece icons)
